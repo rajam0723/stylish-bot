@@ -1,12 +1,19 @@
-FROM python:3.10
+FROM python:3.10-slim-buster
 
 RUN apt update && apt upgrade -y
+
 RUN apt install git -y
+
 COPY requirements.txt /requirements.txt
 
 RUN cd /
+
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /Elsa
-WORKDIR /Elsa
-COPY start.sh /start.sh
+
+RUN mkdir /PiroAutoFilterBot
+
+WORKDIR /PiroAutoFilterBot
+
+COPY . .
+
 CMD ["/bin/bash", "/start.sh"]
