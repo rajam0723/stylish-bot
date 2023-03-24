@@ -10,9 +10,9 @@ RUN cd /
 
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 
-RUN mkdir /PiroAutoFilterBot
+RUN mkdir /stylish-bot
 
-WORKDIR /PiroAutoFilterBot
+WORKDIR /stylish-bot
 
 COPY . .
 
