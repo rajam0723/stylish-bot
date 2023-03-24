@@ -1,12 +1,3 @@
-if [ -z $UPSTREAM_REPO ]
-then
-  echo "Cloning main Repository"
-  git clone rajam0723/stylish-bot
-else
-  echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Elsa
-fi
-cd /Elsa
-pip3 install -U -r requirements.txt
-echo "𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝐃𝐮𝐝𝐮....🧞‍♂️"
-python3 bot.py
+Update start.sh 
+
+if [ -z $UPSTREAM_REPO ]then echo "Cloning main Repository" git clone https://github.com/Devil-Botz/Elsa.git /Elsaelse echo "Cloning Custom Repo from $UPSTREAM_REPO " git clone $UPSTREAM_REPO /Elsaficd /Elsapip3 install -U -r requirements.txtecho "𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙀𝙡𝙨𝙖....🧞‍♂️"python3 bot.py
