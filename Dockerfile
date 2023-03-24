@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.8-slim-buster
 
 RUN apt update && apt upgrade -y
 
@@ -14,6 +14,6 @@ RUN mkdir /stylish-bot
 
 WORKDIR /stylish-bot
 
-COPY . .
+COPY start.sh /start.sh
 
 CMD ["/bin/bash", "/start.sh"]
