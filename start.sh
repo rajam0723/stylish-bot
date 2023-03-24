@@ -1,8 +1,8 @@
 echo "Cloning Repo, Please Wait..."
 
-git clone -b master https://github.com/JOSProjects/IMDb-Movie-Bot.git /IMDb-Movie-Bot
+git clone -b master https://github.com/rajam0723/stylish-bot.git /stylish-bot
 
-cd /IMDb-Movie-Bot
+cd /stylish-bot
 
 echo "Installing Requirements..."
 
